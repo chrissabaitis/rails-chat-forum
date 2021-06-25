@@ -1,24 +1,26 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Running the app
 
-Things you may want to cover:
+`rails c`
 
-* Ruby version
+## Endpoints
 
-* System dependencies
+_note that all responses are decorated in the following format:_
+```
+{
+	data: ...,
+	errors: ...
+}
+```
 
-* Configuration
+### Create a message
 
-* Database creation
+POST `/api/create_message`
+- accepted parameters: `name`, `message`
+- returns all existing messages and any errors that occured
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### Get Messages
+GET `/api/get_messages`
+- accepted paremeters: none
+- returns all existing messages
