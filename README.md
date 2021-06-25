@@ -1,8 +1,8 @@
 # README
 
-## Running the app
+## Running the app locally
 
-`rails c`
+`rails db:migrate && rails s`
 
 ## Endpoints
 
